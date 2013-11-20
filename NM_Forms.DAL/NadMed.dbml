@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="NM_Forms" Class="NadMedDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local);Initial Catalog=NM_Forms;User ID=sa" SettingsObjectName="NM_Forms.DAL.Properties.Settings" SettingsPropertyName="NM_FormsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.BankDetails" Member="BankDetails">
+    <Type Name="BankDetail">
+      <Column Name="BankDetails_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ClientMaster_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bank_Name_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bank_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Bank_Branch" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Bank_Code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Bank_Account" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Bank_Type_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bank_Type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Bank_Frequency_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bank_Frequency" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Declaration_Bank" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Acceptance_Bank" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ClientMaster_BankDetail" Member="ClientMaster" ThisKey="ClientMaster_ID" OtherKey="ClientMaster_ID" Type="ClientMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.webpages_UsersInRoles" Member="webpages_UsersInRoles">
+    <Type Name="webpages_UsersInRole">
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="UserProfile_webpages_UsersInRole" Member="UserProfile" ThisKey="UserId" OtherKey="UserId" Type="UserProfile" IsForeignKey="true" />
+      <Association Name="webpages_Role_webpages_UsersInRole" Member="webpages_Role" ThisKey="RoleId" OtherKey="RoleId" Type="webpages_Role" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BedTypes" Member="BedTypes">
+    <Type Name="BedType">
+      <Column Name="BedTypeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BedType" Member="BedType1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="BedType_Stats_Grid" Member="Stats_Grids" ThisKey="BedTypeID" OtherKey="BedTypeD" Type="Stats_Grid" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Business_Disciplines" Member="Business_Disciplines">
+    <Type Name="Business_Discipline">
+      <Column Name="Business_Discipline_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Businesstype_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Business_Discipline_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Business_Discipline_QuoteRequest" Member="QuoteRequests" ThisKey="Business_Discipline_ID" OtherKey="Business_Discipline_ID" Type="QuoteRequest" />
+      <Association Name="Businesstype_Business_Discipline" Member="Businesstype" ThisKey="Businesstype_ID" OtherKey="Businesstype_ID" Type="Businesstype" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Businesstypes" Member="Businesstypes">
+    <Type Name="Businesstype">
+      <Column Name="Businesstype_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Businesstype_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Businesstype_Business_Discipline" Member="Business_Disciplines" ThisKey="Businesstype_ID" OtherKey="Businesstype_ID" Type="Business_Discipline" />
+      <Association Name="Businesstype_QuoteRequest" Member="QuoteRequests" ThisKey="Businesstype_ID" OtherKey="Businesstype_ID" Type="QuoteRequest" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cities" Member="Cities">
+    <Type Name="City">
+      <Column Name="CityID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CityName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProvinceID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="City_ClientMaster" Member="ClientMasters" ThisKey="CityID" OtherKey="Postal_Address_CityID" Type="ClientMaster" />
+      <Association Name="City_ClientMaster1" Member="ClientMasters1" ThisKey="CityID" OtherKey="Practice_Address_CityID" Type="ClientMaster" />
+      <Association Name="Province_City" Member="Province" ThisKey="ProvinceID" OtherKey="ProvinceID" Type="Province" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ClientEducation" Member="ClientEducations">
+    <Type Name="ClientEducation">
+      <Column Name="ClientEducationID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ClientMaster_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Qualification" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Institution" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Year" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ClientMaster_ClientEducation" Member="ClientMaster" ThisKey="ClientMaster_ID" OtherKey="ClientMaster_ID" Type="ClientMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ClientInsurance" Member="ClientInsurances">
+    <Type Name="ClientInsurance">
+      <Column Name="ClientInsurance_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ClientMaster_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="QuoteFeedback_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Acceptance_Datetime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Renewal_DateTime" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Active_YN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Active_Reason" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Association Name="ClientMaster_ClientInsurance" Member="ClientMaster" ThisKey="ClientMaster_ID" OtherKey="ClientMaster_ID" Type="ClientMaster" IsForeignKey="true" />
+      <Association Name="QuoteFeedback_ClientInsurance" Member="QuoteFeedback" ThisKey="QuoteFeedback_ID" OtherKey="QuoteFeedback_ID" Type="QuoteFeedback" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Clientmaster_Logs" Member="Clientmaster_Logs">
+    <Type Name="Clientmaster_Log">
+      <Column Name="Clientmaster_Log_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ClientMaster_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Log_type_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Log_Details" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Log_Datetime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Log_type_Clientmaster_Log" Member="Log_type" ThisKey="Log_type_ID" OtherKey="Log_type_ID" Type="Log_type" IsForeignKey="true" />
+      <Association Name="ClientMaster_Clientmaster_Log" Member="ClientMaster" ThisKey="ClientMaster_ID" OtherKey="ClientMaster_ID" Type="ClientMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ClientStatus" Member="ClientStatus">
+    <Type Name="ClientStatus">
+      <Column Name="ClientStatusID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ClientStatusName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ClientStatus_ClientMaster" Member="ClientMasters" ThisKey="ClientStatusID" OtherKey="ClientStatusID" Type="ClientMaster" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Factility_Types" Member="Factility_Types">
+    <Type Name="Factility_Type">
+      <Column Name="Factility_Type_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Factility_Type_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Factility_Type_QuoteRequest" Member="QuoteRequests" ThisKey="Factility_Type_ID" OtherKey="Factility_Type_ID" Type="QuoteRequest" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Limit_PerClaim" Member="Limit_PerClaims">
+    <Type Name="Limit_PerClaim">
+      <Column Name="Limit_PerClaim_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Limit_PerClaim" Member="Limit_PerClaim1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ActiveYN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Limit_PerClaim_QuoteRequest" Member="QuoteRequests" ThisKey="Limit_PerClaim_ID" OtherKey="Limit_PerClaim_ID" Type="QuoteRequest" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Limit_PerPeriod" Member="Limit_PerPeriods">
+    <Type Name="Limit_PerPeriod">
+      <Column Name="Limit_PerPeriod_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Limit_PerPeriod" Member="Limit_PerPeriod1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ActiveYN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Limit_PerPeriod_QuoteRequest" Member="QuoteRequests" ThisKey="Limit_PerPeriod_ID" OtherKey="Limit_PerPeriod_ID" Type="QuoteRequest" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Log_types" Member="Log_types">
+    <Type Name="Log_type">
+      <Column Name="Log_type_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Log_type_Desc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Log_type_Clientmaster_Log" Member="Clientmaster_Logs" ThisKey="Log_type_ID" OtherKey="Log_type_ID" Type="Clientmaster_Log" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProfileCorp" Member="ProfileCorps">
+    <Type Name="ProfileCorp">
+      <Column Name="ProfileCorpID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="QuoteRequestID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Contact_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Facility_Number" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Contact_Number" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Facility_Location" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Provinces" Member="Provinces">
+    <Type Name="Province">
+      <Column Name="ProvinceID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProvinceName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Province_City" Member="Cities" ThisKey="ProvinceID" OtherKey="ProvinceID" Type="City" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Stats_Grid" Member="Stats_Grids">
+    <Type Name="Stats_Grid">
+      <Column Name="Stats_grid_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BedTypeD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AnnualNumberOfPatients" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AnnualRevenue" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="Stats_Grid_QuoteRequest" Member="QuoteRequests" ThisKey="Stats_grid_ID" OtherKey="Stats_Grid_ID" Type="QuoteRequest" />
+      <Association Name="BedType_Stats_Grid" Member="BedType" ThisKey="BedTypeD" OtherKey="BedTypeID" Type="BedType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Suburbs" Member="Suburbs">
+    <Type Name="Suburb">
+      <Column Name="SuburbID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CityID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PostalCode" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="Suburb_ClientMaster" Member="ClientMasters" ThisKey="SuburbID" OtherKey="Postal_Address_SuburbID" Type="ClientMaster" />
+      <Association Name="Suburb_ClientMaster1" Member="ClientMasters1" ThisKey="SuburbID" OtherKey="Practice_Address_SuburbID" Type="ClientMaster" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Titles" Member="Titles">
+    <Type Name="Title">
+      <Column Name="TitleID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TitleName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserProfile" Member="UserProfiles">
+    <Type Name="UserProfile">
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(56) NOT NULL" CanBeNull="false" />
+      <Association Name="UserProfile_webpages_UsersInRole" Member="webpages_UsersInRoles" ThisKey="UserId" OtherKey="UserId" Type="webpages_UsersInRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.webpages_Membership" Member="webpages_Memberships">
+    <Type Name="webpages_Membership">
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ConfirmationToken" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="IsConfirmed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LastPasswordFailureDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PasswordFailuresSinceLastSuccess" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordChangedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PasswordSalt" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordVerificationToken" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="PasswordVerificationTokenExpirationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.webpages_OAuthMembership" Member="webpages_OAuthMemberships">
+    <Type Name="webpages_OAuthMembership">
+      <Column Name="Provider" Type="System.String" DbType="NVarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProviderUserId" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.webpages_Roles" Member="webpages_Roles">
+    <Type Name="webpages_Role">
+      <Column Name="RoleId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Association Name="webpages_Role_webpages_UsersInRole" Member="webpages_UsersInRoles" ThisKey="RoleId" OtherKey="RoleId" Type="webpages_UsersInRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ClientMaster" Member="ClientMasters">
+    <Type Name="ClientMaster">
+      <Column Name="ClientMaster_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UniqueID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ClientStatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name_Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name_First" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name_Last" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name_Initials" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Name_Preferred" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date_Birth" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="REF_Identity" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="REF_Practitioner" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="REF_Practice" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="REF_Registered_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="REF_Registration_Number" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="REF_VAT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Contact_Email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Contact_Mobile" Type="System.String" DbType="NVarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="Contact_Practice1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Contact_Practice2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Contact_Home1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Postal_Address_1A" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Postal_Address_1B" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Postal_Address_1C" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Postal_Address_1D" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Postal_Address_SuburbID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Postal_Address_1E" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Postal_Address_CityID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Postal_Address_1F" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Postal_Address_1G" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Practice_Address_1A" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Practice_Address_1B" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Practice_Address_1C" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Practice_Address_1D" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Practice_Address_SuburbID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Practice_Address_1E" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Practice_Address_CityID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Practice_Address_1F" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Practice_Address_1G" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Facility_Number" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Facility_Location" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="InitialKey" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RequiresPasswordChange" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ProviderUserKey" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ClientMaster_BankDetail" Member="BankDetails" ThisKey="ClientMaster_ID" OtherKey="ClientMaster_ID" Type="BankDetail" />
+      <Association Name="ClientMaster_ClientEducation" Member="ClientEducations" ThisKey="ClientMaster_ID" OtherKey="ClientMaster_ID" Type="ClientEducation" />
+      <Association Name="ClientMaster_ClientInsurance" Member="ClientInsurances" ThisKey="ClientMaster_ID" OtherKey="ClientMaster_ID" Type="ClientInsurance" />
+      <Association Name="ClientMaster_Clientmaster_Log" Member="Clientmaster_Logs" ThisKey="ClientMaster_ID" OtherKey="ClientMaster_ID" Type="Clientmaster_Log" />
+      <Association Name="City_ClientMaster" Member="City" ThisKey="Postal_Address_CityID" OtherKey="CityID" Type="City" IsForeignKey="true" />
+      <Association Name="City_ClientMaster1" Member="City1" ThisKey="Practice_Address_CityID" OtherKey="CityID" Type="City" IsForeignKey="true" />
+      <Association Name="ClientStatus_ClientMaster" Member="ClientStatus" ThisKey="ClientStatusID" OtherKey="ClientStatusID" Type="ClientStatus" IsForeignKey="true" />
+      <Association Name="Suburb_ClientMaster" Member="Suburb" ThisKey="Postal_Address_SuburbID" OtherKey="SuburbID" Type="Suburb" IsForeignKey="true" />
+      <Association Name="Suburb_ClientMaster1" Member="Suburb1" ThisKey="Practice_Address_SuburbID" OtherKey="SuburbID" Type="Suburb" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QuoteRequest" Member="QuoteRequests">
+    <Type Name="QuoteRequest">
+      <Column Name="QuoteRequest_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UniqueID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="QuoteType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ClientMaster_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Businesstype_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Business_Type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Business_Discipline_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Business_Discipline" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Limit_PerClaim_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Limit_PerClaim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Limit_PerPeriod_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Limit_PerPeriod" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Stats_Private_Consultations" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Stats_Private_Procedures" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Stats_State_Consultations" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Stats_State_Procedures" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Stats_Private_Procedures_Income" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Stats_State_Procedures_Income" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Stats_Private_Consultations_Income" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Stats_State_Consultations_Income" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Stats_Caesarians" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Stats_NVD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Stats_Hysterectomies" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Cover_Current_Provider" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Cover_Current_Years" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Stats_Surgery" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Claims_Enquiries" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Claims_Actual" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Claims_HPCSA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Claims_Circumstances" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Material_Facts" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Declaration_Quote" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Acceptance_Quote" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Premium_Period_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Premium_Period" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Factility_Type_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Factility_Type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Stats_Grid_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Stats_Number_Of_Nursing_Staff" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Stats_Number_of_Births_Annual" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Stats_Number_of_Deaths_Annual" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Authorize_Claims" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Authorize_Claims_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="QuoteRequest_QuoteFeedback" Member="QuoteFeedbacks" ThisKey="QuoteRequest_ID" OtherKey="QuoteRequest_ID" Type="QuoteFeedback" />
+      <Association Name="QuoteRequest_QuoteFeedback1" Member="QuoteFeedbacks1" ThisKey="QuoteRequest_ID" OtherKey="QuoteRequest_ID" Type="QuoteFeedback" />
+      <Association Name="Business_Discipline_QuoteRequest" Member="Business_Discipline1" ThisKey="Business_Discipline_ID" OtherKey="Business_Discipline_ID" Type="Business_Discipline" IsForeignKey="true" />
+      <Association Name="Businesstype_QuoteRequest" Member="Businesstype" ThisKey="Businesstype_ID" OtherKey="Businesstype_ID" Type="Businesstype" IsForeignKey="true" />
+      <Association Name="Limit_PerClaim_QuoteRequest" Member="Limit_PerClaim1" ThisKey="Limit_PerClaim_ID" OtherKey="Limit_PerClaim_ID" Type="Limit_PerClaim" IsForeignKey="true" />
+      <Association Name="Limit_PerPeriod_QuoteRequest" Member="Limit_PerPeriod1" ThisKey="Limit_PerPeriod_ID" OtherKey="Limit_PerPeriod_ID" Type="Limit_PerPeriod" IsForeignKey="true" />
+      <Association Name="Factility_Type_QuoteRequest" Member="Factility_Type1" ThisKey="Factility_Type_ID" OtherKey="Factility_Type_ID" Type="Factility_Type" IsForeignKey="true" />
+      <Association Name="Stats_Grid_QuoteRequest" Member="Stats_Grid" ThisKey="Stats_Grid_ID" OtherKey="Stats_grid_ID" Type="Stats_Grid" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QuoteFeedback" Member="QuoteFeedbacks">
+    <Type Name="QuoteFeedback">
+      <Column Name="QuoteFeedback_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="QuoteRequest_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Insurer_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Insurer" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Indemnity_limit" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Premium_Annual" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Excess" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Excess_Type" Type="System.String" DbType="NVarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="Comments" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Wording" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Quote_Processed_Datetime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Quote_Expiry_Datetime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Active_YN" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="QuoteFeedback_ClientInsurance" Member="ClientInsurances" ThisKey="QuoteFeedback_ID" OtherKey="QuoteFeedback_ID" Type="ClientInsurance" />
+      <Association Name="QuoteRequest_QuoteFeedback" Member="QuoteRequest" ThisKey="QuoteRequest_ID" OtherKey="QuoteRequest_ID" Type="QuoteRequest" IsForeignKey="true" />
+      <Association Name="QuoteRequest_QuoteFeedback1" Member="QuoteRequest1" ThisKey="QuoteRequest_ID" OtherKey="QuoteRequest_ID" Type="QuoteRequest" IsForeignKey="true" />
+      <Association Name="Insurer_QuoteFeedback" Member="Insurer1" ThisKey="Insurer_ID" OtherKey="Insurer_ID" Type="Insurer" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Insurer" Member="Insurers">
+    <Type Name="Insurer">
+      <Column Name="Insurer_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Insurer_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Wording" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ActiveYN" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Insurer_QuoteFeedback" Member="QuoteFeedbacks" ThisKey="Insurer_ID" OtherKey="Insurer_ID" Type="QuoteFeedback" />
+    </Type>
+  </Table>
+  <Function Name="dbo.getClientsAwaitingQuotes" Method="getClientsAwaitingQuotes">
+    <ElementType Name="getClientsAwaitingQuotesResult">
+      <Column Name="ClientMaster_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name_Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name_First" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name_Last" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Date_Birth" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="QuoteRequest_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Acceptance_Quote" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="QuoteCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

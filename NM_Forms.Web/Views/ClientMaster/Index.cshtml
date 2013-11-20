@@ -1,0 +1,286 @@
+﻿@model IEnumerable<NM_Forms.BL.ClientMaster>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ClientMaster_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UniqueID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClientStatusID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name_Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name_First)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name_Last)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name_Initials)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name_Preferred)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date_Birth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REF_Identity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REF_Practitioner)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REF_Practice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REF_Registered_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REF_Registration_Number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REF_VAT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contact_Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contact_Mobile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contact_Practice1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contact_Practice2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contact_Home1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Postal_Address_1A)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Postal_Address_1B)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Postal_Address_1C)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Postal_Address_1D)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Postal_Address_SuburbID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Postal_Address_1E)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Postal_Address_CityID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Postal_Address_1F)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Postal_Address_1G)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Practice_Address_1A)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Practice_Address_1B)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Practice_Address_1C)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Practice_Address_1D)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Practice_Address_SuburbID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Practice_Address_1E)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Practice_Address_CityID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Practice_Address_1F)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Practice_Address_1G)
+        </th>
+         <th>
+            @Html.DisplayNameFor(model => model.Facility_Number)
+        </th>
+         <th>
+            @Html.DisplayNameFor(model => model.Facility_Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InitialKey)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequiresPasswordChange)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProviderUserKey)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClientMaster_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UniqueID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClientStatusID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name_Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name_First)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name_Last)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name_Initials)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name_Preferred)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date_Birth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REF_Identity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REF_Practitioner)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REF_Practice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REF_Registered_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REF_Registration_Number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REF_VAT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contact_Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contact_Mobile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contact_Practice1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contact_Practice2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contact_Home1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Postal_Address_1A)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Postal_Address_1B)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Postal_Address_1C)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Postal_Address_1D)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Postal_Address_SuburbID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Postal_Address_1E)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Postal_Address_CityID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Postal_Address_1F)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Postal_Address_1G)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Practice_Address_1A)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Practice_Address_1B)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Practice_Address_1C)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Practice_Address_1D)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Practice_Address_SuburbID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Practice_Address_1E)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Practice_Address_CityID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Practice_Address_1F)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Practice_Address_1G)
+        </td>
+        <td>
+            @Html.DisplayNameFor(model => model.Facility_Number)
+        </td>
+         <td>
+            @Html.DisplayNameFor(model => model.Facility_Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InitialKey)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequiresPasswordChange)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProviderUserKey)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=item.ClientMaster_ID  }) |
+            @Html.ActionLink("Details", "Details", new {  id=item.ClientMaster_ID  }) |
+            @Html.ActionLink("Delete", "Delete", new {  id=item.ClientMaster_ID  })
+        </td>
+    </tr>
+}
+
+</table>

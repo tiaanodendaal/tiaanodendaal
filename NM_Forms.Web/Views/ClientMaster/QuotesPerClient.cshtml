@@ -1,0 +1,66 @@
+﻿@model IEnumerable<NM_Forms.BL.QuoteFeedback>
+
+@{
+    ViewBag.Title = "QuotesPerClient";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>QuotesPerClient</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table cellpadding="10">
+    <tr>
+      
+        <th>
+            @Html.DisplayNameFor(model => model.Insurer)
+        </th>
+        <th>
+            Indemnity limit
+        </th>
+        <th>
+            Premium
+        </th>
+        <th>
+            Excess
+        </th>
+        <th>
+            Excess Type
+        </th>
+        <th>
+            Processed
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.Insurer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Indemnity_limit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Premium_Annual)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Excess)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Excess_Type)
+        </td>
+        <td>
+            @Html.Raw(String.Format("{0:dd/MMM/yyyy}",item.Quote_Processed_Datetime))
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

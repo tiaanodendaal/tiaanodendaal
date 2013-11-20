@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 17, 27.375" name="NadMed">
+  <DataContextMoniker Name="/NadMedDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1f9f24f2-44bb-443e-959d-d764438706ee" absoluteBounds="9.25, 17.5, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/NadMedDataContext/BankDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ffd8d585-eb36-49eb-8b69-05a07cb3b2fa" absoluteBounds="9.265, 17.96, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c880e74c-93d3-4a19-8262-0001328d6751" absoluteBounds="3.5, 0.875, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/NadMedDataContext/webpages_UsersInRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cfb862e3-5c4d-45e9-9726-071b0f97677b" absoluteBounds="3.515, 1.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f79355d7-90ce-419b-a44a-30ba772043ac" absoluteBounds="1.5, 23, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/NadMedDataContext/BedType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a518223-f26a-49e9-a153-62e6e5d05209" absoluteBounds="1.5150000000000001, 23.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="64ae7762-5438-407a-b9b7-7ebb42069157" absoluteBounds="0.75, 8.375, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/NadMedDataContext/Business_Discipline" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dea3cd99-7cc2-4df9-bae8-18082c68efcf" absoluteBounds="0.765, 8.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e8c11c89-f974-4c11-9b9e-8fb6fce4bd3f" absoluteBounds="1.5, 3.5, 2, 1.193992513020834">
+      <DataClassMoniker Name="/NadMedDataContext/Businesstype" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3cc6138d-4995-4304-84cb-5807b0bd3ddb" absoluteBounds="1.5150000000000001, 3.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2bdf612-5ea2-4a34-b978-36c76b35356a" absoluteBounds="3.75, 17.625, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/NadMedDataContext/City" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e5e72c66-702e-457f-b0c4-010c41046ed4" absoluteBounds="3.765, 18.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="15733471-91cc-45cf-89d2-52b8aa9c2970" absoluteBounds="9.25, 11.875, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/NadMedDataContext/ClientEducation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a2766627-11c7-4610-a0ca-e455e1f8b1c3" absoluteBounds="9.265, 12.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b8dcec73-0dbc-495a-8c8c-7b8bd2ca7102" absoluteBounds="12.25, 11.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/NadMedDataContext/ClientInsurance" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5e286b5e-0e75-4b7b-bf13-2dbd6a4987ba" absoluteBounds="12.265, 11.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="386ff623-8768-4ee2-a367-6c53185cf895" absoluteBounds="9.25, 8.5, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/NadMedDataContext/Clientmaster_Log" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8f8d0e4e-3404-4eb9-9005-124804ba061d" absoluteBounds="9.265, 8.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e0a4c48f-9293-4f05-bd0f-0b5f56113fff" absoluteBounds="3.75, 5.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NadMedDataContext/ClientStatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="272b6614-613b-4419-b7fb-700d32010914" absoluteBounds="3.765, 6.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7c7482eb-ccca-4772-becc-448eea1e145e" absoluteBounds="0.75, 11.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NadMedDataContext/Factility_Type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="04a13a23-56ce-4d46-aed7-ae5e3a9bcfba" absoluteBounds="0.765, 12.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e4cfc69-4e85-430a-ae53-5a754ccf1ba2" absoluteBounds="0.75, 14.625, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/NadMedDataContext/Limit_PerClaim" />
+      <nestedChildShapes>
+        <elementListCompartment Id="777e92fc-bc0c-4951-aa39-3307c178bf49" absoluteBounds="0.765, 15.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4da7c913-b307-47c4-a6b0-06f5115cc278" absoluteBounds="0.75, 5.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/NadMedDataContext/Limit_PerPeriod" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aabb7857-20eb-4fef-8587-28dfd81e6726" absoluteBounds="0.765, 6.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29a0cdbf-1975-4d4a-a5cf-02e26ce3fb72" absoluteBounds="6.5, 4.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NadMedDataContext/Log_type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="597d6b19-3f0a-484a-9fa7-08850f4f5eae" absoluteBounds="6.515, 5.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7da1c6d2-0ef4-4fc9-abe1-dddd1bffdb09" absoluteBounds="12.75, 0.75, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/NadMedDataContext/ProfileCorp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ac470470-b9fa-41a5-83ec-35396d3dfc05" absoluteBounds="12.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d006ba6-4e1e-4444-b138-65dadd2ca9c5" absoluteBounds="1, 17.75, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/NadMedDataContext/Province" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e4efef95-eafe-4504-ba23-0e93748d1829" absoluteBounds="1.0150000000000001, 18.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d94352e7-7bb0-4fe5-8dbc-416659a8a354" absoluteBounds="0.75, 19.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/NadMedDataContext/Stats_Grid" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5aac3ebc-6368-46e7-b26f-502cc1d8d4c2" absoluteBounds="0.765, 20.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="94da7ad0-da5a-40b3-829f-1169eeaabe6b" absoluteBounds="3.75, 19.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/NadMedDataContext/Suburb" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5637b424-d53a-4794-ba96-f38d7acdbdc5" absoluteBounds="3.765, 20.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4ba007b4-1f05-4d92-b7dd-b36a289d06b7" absoluteBounds="6.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/NadMedDataContext/Title" />
+      <nestedChildShapes>
+        <elementListCompartment Id="84e0d71a-bf79-4709-9c67-980e839c4ecc" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="80b6bea5-15e6-476a-a435-ca8edfbdbc47" absoluteBounds="0.75, 0.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/NadMedDataContext/UserProfile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b78ef991-dc9d-4d80-8779-5a35f4968ab1" absoluteBounds="0.765, 1.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5f6708d0-f4be-431b-9efd-217f586994a2" absoluteBounds="14.75, 3.75, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/NadMedDataContext/webpages_Membership" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf45aa1c-d1cf-4eb8-af07-f8f28607b9c4" absoluteBounds="14.765, 4.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="012ca0f9-7faf-4e6c-808b-cbcd673886cd" absoluteBounds="14.75, 7.75, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/NadMedDataContext/webpages_OAuthMembership" />
+      <nestedChildShapes>
+        <elementListCompartment Id="97b0ecb9-bda9-443a-a7e4-3f3a525393c9" absoluteBounds="14.765, 8.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c0a06598-09e2-4e6f-ba62-0fb3478942cb" absoluteBounds="0.75, 25.875, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/NadMedDataContext/webpages_Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e27812a5-c4cb-4c9e-9f88-6fdd505fe322" absoluteBounds="0.765, 26.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.1250005 : 4.69399251302083); (3.1250005 : 9.06814697265625); (2.75 : 9.06814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/Businesstype/Businesstype_Business_Discipline" />
+      <nodes>
+        <classShapeMoniker Id="e8c11c89-f974-4c11-9b9e-8fb6fce4bd3f" />
+        <classShapeMoniker Id="64ae7762-5438-407a-b9b7-7ebb42069157" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 5.47199625651042); (10.25 : 5.47199625651042); (10.25 : 8.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/Log_type/Log_type_Clientmaster_Log" />
+      <nodes>
+        <classShapeMoniker Id="29a0cdbf-1975-4d4a-a5cf-02e26ce3fb72" />
+        <classShapeMoniker Id="386ff623-8768-4ee2-a367-6c53185cf895" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3 : 18.3469962565104); (3.75 : 18.3469962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/Province/Province_City" />
+      <nodes>
+        <classShapeMoniker Id="6d006ba6-4e1e-4444-b138-65dadd2ca9c5" />
+        <classShapeMoniker Id="d2bdf612-5ea2-4a34-b978-36c76b35356a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.125 : 23); (2.125 : 21.4535953776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/BedType/BedType_Stats_Grid" />
+      <nodes>
+        <classShapeMoniker Id="f79355d7-90ce-419b-a44a-30ba772043ac" />
+        <classShapeMoniker Id="d94352e7-7bb0-4fe5-8dbc-416659a8a354" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.47199625651042); (3.5 : 1.47199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NadMedDataContext/UserProfile/UserProfile_webpages_UsersInRole" />
+      <nodes>
+        <classShapeMoniker Id="80b6bea5-15e6-476a-a435-ca8edfbdbc47" />
+        <classShapeMoniker Id="c880e74c-93d3-4a19-8262-0001328d6751" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 26.4719962565104); (3.625 : 26.4719962565104); (3.625 : 2.06899251302083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/webpages_Role/webpages_Role_webpages_UsersInRole" />
+      <nodes>
+        <classShapeMoniker Id="c0a06598-09e2-4e6f-ba62-0fb3478942cb" />
+        <classShapeMoniker Id="c880e74c-93d3-4a19-8262-0001328d6751" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="da545582-7c9c-4720-b092-ed2ad3d02d5a" absoluteBounds="6.125, 8.875, 2, 9.0783512369791648">
+      <DataClassMoniker Name="/NadMedDataContext/ClientMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d1dd1a3c-7aae-4e70-b3da-5a248df9e6ad" absoluteBounds="6.14, 9.335, 1.9700000000000002, 8.5183512369791661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.125 : 17.7266756184896); (9.25 : 17.7266756184896)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/ClientMaster/ClientMaster_BankDetail" />
+      <nodes>
+        <classShapeMoniker Id="da545582-7c9c-4720-b092-ed2ad3d02d5a" />
+        <classShapeMoniker Id="1f9f24f2-44bb-443e-959d-d764438706ee" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.125 : 12.8565991210937); (9.25 : 12.8565991210937)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/ClientMaster/ClientMaster_ClientEducation" />
+      <nodes>
+        <classShapeMoniker Id="da545582-7c9c-4720-b092-ed2ad3d02d5a" />
+        <classShapeMoniker Id="15733471-91cc-45cf-89d2-52b8aa9c2970" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.125 : 11.59375); (12.25 : 11.59375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/ClientMaster/ClientMaster_ClientInsurance" />
+      <nodes>
+        <classShapeMoniker Id="da545582-7c9c-4720-b092-ed2ad3d02d5a" />
+        <classShapeMoniker Id="b8dcec73-0dbc-495a-8c8c-7b8bd2ca7102" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.125 : 9.57294840494792); (9.25 : 9.57294840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/ClientMaster/ClientMaster_Clientmaster_Log" />
+      <nodes>
+        <classShapeMoniker Id="da545582-7c9c-4720-b092-ed2ad3d02d5a" />
+        <classShapeMoniker Id="386ff623-8768-4ee2-a367-6c53185cf895" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 18.5292902043269); (5.82291666666667 : 18.5292902043269 : JumpStart); (5.98958333333333 : 18.5292902043269 : JumpEnd); (6.51041466666667 : 18.5292902043269 : JumpStart); (6.67708133333333 : 18.5292902043269 : JumpEnd); (7.125 : 18.5292902043269); (7.125 : 17.9533512369792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/City/City_ClientMaster" />
+      <nodes>
+        <classShapeMoniker Id="d2bdf612-5ea2-4a34-b978-36c76b35356a" />
+        <classShapeMoniker Id="da545582-7c9c-4720-b092-ed2ad3d02d5a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 18.116601160607); (5.82291666666667 : 18.116601160607 : JumpStart); (5.98958333333333 : 18.116601160607 : JumpEnd); (7.125 : 18.116601160607); (7.125 : 17.9533512369792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/City/City_ClientMaster1" />
+      <nodes>
+        <classShapeMoniker Id="d2bdf612-5ea2-4a34-b978-36c76b35356a" />
+        <classShapeMoniker Id="da545582-7c9c-4720-b092-ed2ad3d02d5a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 6.53774251302083); (6.28125 : 6.53774251302083); (6.28125 : 8.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/ClientStatus/ClientStatus_ClientMaster" />
+      <nodes>
+        <classShapeMoniker Id="e0a4c48f-9293-4f05-bd0f-0b5f56113fff" />
+        <classShapeMoniker Id="da545582-7c9c-4720-b092-ed2ad3d02d5a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 20.4431469726563); (5.82291666666667 : 20.4431469726563 : JumpStart); (5.98958333333333 : 20.4431469726563 : JumpEnd); (7.656252 : 20.4431469726563); (7.656252 : 17.9533512369792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/Suburb/Suburb_ClientMaster" />
+      <nodes>
+        <classShapeMoniker Id="94da7ad0-da5a-40b3-829f-1169eeaabe6b" />
+        <classShapeMoniker Id="da545582-7c9c-4720-b092-ed2ad3d02d5a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 20.0653209863281); (5.82291666666667 : 20.0653209863281 : JumpStart); (5.98958333333333 : 20.0653209863281 : JumpEnd); (6.593748 : 20.0653209863281); (6.593748 : 17.9533512369792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/Suburb/Suburb_ClientMaster1" />
+      <nodes>
+        <classShapeMoniker Id="94da7ad0-da5a-40b3-829f-1169eeaabe6b" />
+        <classShapeMoniker Id="da545582-7c9c-4720-b092-ed2ad3d02d5a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a56e867b-a52b-4a96-b3fd-c79182ea290f" absoluteBounds="4, 7.5, 2, 9.0783512369791648">
+      <DataClassMoniker Name="/NadMedDataContext/QuoteRequest" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be705cc0-c4e1-4efa-8439-cd0ea3557d0e" absoluteBounds="4.015, 7.96, 1.9700000000000002, 8.5183512369791661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 8.65907348632813); (4 : 8.65907348632813)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/Business_Discipline/Business_Discipline_QuoteRequest" />
+      <nodes>
+        <classShapeMoniker Id="64ae7762-5438-407a-b9b7-7ebb42069157" />
+        <classShapeMoniker Id="a56e867b-a52b-4a96-b3fd-c79182ea290f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.34375275 : 4.69399251302083); (3.34375275 : 10.8181469726562); (4 : 10.8181469726562)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/Businesstype/Businesstype_QuoteRequest" />
+      <nodes>
+        <classShapeMoniker Id="e8c11c89-f974-4c11-9b9e-8fb6fce4bd3f" />
+        <classShapeMoniker Id="a56e867b-a52b-4a96-b3fd-c79182ea290f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 15.3181469726562); (3.54166666666667 : 15.3181469726562 : JumpStart); (3.70833333333333 : 15.3181469726562 : JumpEnd); (4 : 15.3181469726562)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/Limit_PerClaim/Limit_PerClaim_QuoteRequest" />
+      <nodes>
+        <classShapeMoniker Id="7e4cfc69-4e85-430a-ae53-5a754ccf1ba2" />
+        <classShapeMoniker Id="a56e867b-a52b-4a96-b3fd-c79182ea290f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.07139322916667); (3.04166716666667 : 7.07139322916667 : JumpStart); (3.20833383333333 : 7.07139322916667 : JumpEnd); (3.26041941666667 : 7.07139322916667 : JumpStart); (3.42708608333333 : 7.07139322916667 : JumpEnd); (5.90625 : 7.07139322916667); (5.90625 : 7.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/Limit_PerPeriod/Limit_PerPeriod_QuoteRequest" />
+      <nodes>
+        <classShapeMoniker Id="4da7c913-b307-47c4-a6b0-06f5115cc278" />
+        <classShapeMoniker Id="a56e867b-a52b-4a96-b3fd-c79182ea290f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 12.4719962565104); (4 : 12.4719962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/Factility_Type/Factility_Type_QuoteRequest" />
+      <nodes>
+        <classShapeMoniker Id="7c7482eb-ccca-4772-becc-448eea1e145e" />
+        <classShapeMoniker Id="a56e867b-a52b-4a96-b3fd-c79182ea290f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 21.3261946614583); (5.90625 : 21.3261946614583); (5.90625 : 16.5783512369792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/Stats_Grid/Stats_Grid_QuoteRequest" />
+      <nodes>
+        <classShapeMoniker Id="d94352e7-7bb0-4fe5-8dbc-416659a8a354" />
+        <classShapeMoniker Id="a56e867b-a52b-4a96-b3fd-c79182ea290f" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e2468e73-d038-4163-adc2-ace7a8ecfb0a" absoluteBounds="12.125, 6.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/NadMedDataContext/QuoteFeedback" />
+      <nestedChildShapes>
+        <elementListCompartment Id="26b7dd9c-89c4-4753-9a5d-52e5fe5640e2" absoluteBounds="12.14, 7.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(13.1875 : 10.0593082682292); (13.1875 : 11.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/QuoteFeedback/QuoteFeedback_ClientInsurance" />
+      <nodes>
+        <classShapeMoniker Id="e2468e73-d038-4163-adc2-ace7a8ecfb0a" />
+        <classShapeMoniker Id="b8dcec73-0dbc-495a-8c8c-7b8bd2ca7102" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6 : 8.078125); (12.125 : 8.078125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/QuoteRequest/QuoteRequest_QuoteFeedback" />
+      <nodes>
+        <classShapeMoniker Id="a56e867b-a52b-4a96-b3fd-c79182ea290f" />
+        <classShapeMoniker Id="e2468e73-d038-4163-adc2-ace7a8ecfb0a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6 : 8.3203125); (10.1666666666667 : 8.3203125 : JumpStart); (10.3333333333333 : 8.3203125 : JumpEnd); (12.125 : 8.3203125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NadMedDataContext/QuoteRequest/QuoteRequest_QuoteFeedback1" />
+      <nodes>
+        <classShapeMoniker Id="a56e867b-a52b-4a96-b3fd-c79182ea290f" />
+        <classShapeMoniker Id="e2468e73-d038-4163-adc2-ace7a8ecfb0a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="df08b154-a7c3-4358-ba60-399857de8ed0" absoluteBounds="11.5, 4.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/NadMedDataContext/Insurer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e35627be-ae55-4a73-b257-20dc76cf1e8e" absoluteBounds="11.515, 4.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(12.8125 : 5.70359537760417); (12.8125 : 6.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NadMedDataContext/Insurer/Insurer_QuoteFeedback" />
+      <nodes>
+        <classShapeMoniker Id="df08b154-a7c3-4358-ba60-399857de8ed0" />
+        <classShapeMoniker Id="e2468e73-d038-4163-adc2-ace7a8ecfb0a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
